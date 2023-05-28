@@ -14,6 +14,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.warlaak.tutorialmod.TutorialMod;
+import net.warlaak.tutorialmod.block.custom.JumpyBlock;
 import net.warlaak.tutorialmod.item.ModItemGroup;
 import net.warlaak.tutorialmod.item.ModItems;
 
@@ -30,6 +31,9 @@ public class ModBlocks {
             new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(), UniformIntProvider.create(4, 8)), ModItemGroup.TUTORIAL_MOD);
     public static final Block ENDSTONE_TANZANITE_ORE = registerBlock("endstone_tanzanite_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool(), UniformIntProvider.create(4, 8)), ModItemGroup.TUTORIAL_MOD);
+
+    public static final Block JUMPY_BLOCK = registerBlock("jumpy_block",
+            new JumpyBlock(FabricBlockSettings.of(Material.STONE).strength(2f)), ModItemGroup.TUTORIAL_MOD);
 
 
     private static Block registerBlock(String name, Block block, ItemGroup group){
