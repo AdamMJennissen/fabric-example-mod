@@ -15,6 +15,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.warlaak.tutorialmod.TutorialMod;
 import net.warlaak.tutorialmod.block.custom.JumpyBlock;
+import net.warlaak.tutorialmod.block.custom.TanzaniteLampBlock;
 import net.warlaak.tutorialmod.item.ModItemGroup;
 import net.warlaak.tutorialmod.item.ModItems;
 
@@ -34,6 +35,9 @@ public class ModBlocks {
 
     public static final Block JUMPY_BLOCK = registerBlock("jumpy_block",
             new JumpyBlock(FabricBlockSettings.of(Material.STONE).strength(2f)), ModItemGroup.TUTORIAL_MOD);
+
+    public static final Block TANZANITE_LAMP_BLOCK = registerBlock("tanzanite_lamp_block",
+            new TanzaniteLampBlock(FabricBlockSettings.of(Material.GLASS).strength(1f).luminance(state -> state.get(TanzaniteLampBlock.LIT) ? 15 : 0)), ModItemGroup.TUTORIAL_MOD);
 
 
     private static Block registerBlock(String name, Block block, ItemGroup group){
