@@ -4,6 +4,9 @@
 
   "item.tutorialmod.eight_ball": "Eight Ball",
 
+  "item.tutorialmod.eggplant": "Eggplant",
+  "item.tutorialmod.eggplant_seeds": "Eggplant Seeds",
+
   "block.tutorialmod.tanzanite_ore": "Tanzanite Ore",
   "block.tutorialmod.deepslate_tanzanite_ore": "Deepslate Tanzanite Ore",
   "block.tutorialmod.netherrack_tanzanite_ore": "Netherrack Tanzanite Ore",
@@ -14,6 +17,7 @@
   "block.tutorialmod.jumpy_block": "Jumpy Block",
   "block.tutorialmod.tanzanite_lamp_block": "Tanzanite Lamp",
 
+  "block.tutorialmod.eggplant_crop": "Eggplant Crop",
 
   "itemGroup.tutorialmod-tutorialmod": "Tutorial Mod"
 }

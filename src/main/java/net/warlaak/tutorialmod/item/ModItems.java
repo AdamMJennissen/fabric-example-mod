@@ -1,12 +1,16 @@
 package net.warlaak.tutorialmod.item;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.AliasedBlockItem;
+import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.warlaak.tutorialmod.TutorialMod;
+import net.warlaak.tutorialmod.block.ModBlocks;
 import net.warlaak.tutorialmod.item.custom.EightBallItem;
 
 public class ModItems {
@@ -15,7 +19,8 @@ public class ModItems {
     public static final Item RAW_TANZANITE = registerItem("raw_tanzanite", new Item(new Item.Settings()), ModItemGroup.TUTORIAL_MOD);
     public static final Item TANZANITE = registerItem("tanzanite", new Item(new Item.Settings()), ModItemGroup.TUTORIAL_MOD);
     public static final Item EIGHT_BALL = registerItem("eight_ball", new EightBallItem(new Item.Settings().maxCount(1)), ModItemGroup.TUTORIAL_MOD);
-
+    public static final Item EGGPLANT_SEEDS = registerItem("eggplant_seeds", new AliasedBlockItem(ModBlocks.EGGPLANT_CROP, new Item.Settings()), ModItemGroup.TUTORIAL_MOD);
+    public static final Item EGGPLANT = registerItem("eggplant", new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(4).saturationModifier(4f).build())), ModItemGroup.TUTORIAL_MOD);
 
 
 
